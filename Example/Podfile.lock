@@ -1,0 +1,16 @@
+PODS:
+  - ABExpandableView (0.1.0)
+
+DEPENDENCIES:
+  - ABExpandableView (from `../`)
+
+EXTERNAL SOURCES:
+  ABExpandableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ABExpandableView: c3f8d8c04cf73c586dd703e6dd4e21adfcc3506f
+
+PODFILE CHECKSUM: f7f9a9eb9af9dc05b86ffb16138c75d59e38ba4d
+
+COCOAPODS: 1.2.0.beta.1
