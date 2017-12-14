@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ABExpandableView_Example' do
+  pod 'ABExpandableView', :path => '../'
+
+  target 'ABExpandableView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
