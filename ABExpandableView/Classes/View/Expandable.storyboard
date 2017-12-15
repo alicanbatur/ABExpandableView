@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xHk-oO-F64">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Expandable Sections View Controller-->
+        <scene sceneID="HC4-nK-Vly">
+            <objects>
+                <viewController id="xHk-oO-F64" customClass="ExpandableSectionsViewController" customModule="ABExpandableView" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IDF-h4-IoM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nothing has been found with the typed text." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISB-86-p0e" userLabel="Warning Label">
+                                <rect key="frame" x="25" y="80" width="325" height="19.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19.5" id="PVe-sN-nmP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Rj-f3-tVI">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="All" id="PLj-lo-qOZ">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="pzs-9W-lcm"/>
+                                    </constraints>
+                                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="SelectionCell" textLabel="Fyy-Kv-Ega" style="IBUITableViewCellStyleDefault" id="6f2-NU-LRH" customClass="SelectionCell">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6f2-NU-LRH" id="FAC-EF-nAE">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fyy-Kv-Ega">
+                                                    <rect key="frame" x="15" y="0.0" width="321" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="leading" secondItem="LMV-hv-XHQ" secondAttribute="leading" id="2YY-6I-i3L"/>
+                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="bottom" secondItem="LMV-hv-XHQ" secondAttribute="bottom" id="3As-xv-ga7"/>
+                            <constraint firstItem="ISB-86-p0e" firstAttribute="leading" secondItem="LMV-hv-XHQ" secondAttribute="leading" constant="25" id="EpN-2G-VDN"/>
+                            <constraint firstItem="ISB-86-p0e" firstAttribute="top" secondItem="LMV-hv-XHQ" secondAttribute="top" constant="60" id="Rhx-21-bOz"/>
+                            <constraint firstItem="LMV-hv-XHQ" firstAttribute="trailing" secondItem="ISB-86-p0e" secondAttribute="trailing" constant="25" id="TSN-OO-gHF"/>
+                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="trailing" secondItem="LMV-hv-XHQ" secondAttribute="trailing" id="hLv-no-IRD"/>
+                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="top" secondItem="IDF-h4-IoM" secondAttribute="top" id="jjj-t0-EIj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LMV-hv-XHQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ydk-i0-Kjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="169.56521739130437"/>
+        </scene>
+    </scenes>
+</document>
