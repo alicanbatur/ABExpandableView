@@ -7,18 +7,15 @@
 //
 
 import UIKit
+import ABExpandableView
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    // MARK: - IBAction
+    
+    @IBAction func buttonTapped(_ sender: Any) {
+        let asd = ExpandableSectionsViewController.newInstance()
+        self.navigationController?.pushViewController(asd, animated: true)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 

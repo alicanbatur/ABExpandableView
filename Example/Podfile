@@ -5,7 +5,6 @@ target 'ABExpandableView_Example' do
 
   target 'ABExpandableView_Tests' do
     inherit! :search_paths
-
-    
   end
+  
 end

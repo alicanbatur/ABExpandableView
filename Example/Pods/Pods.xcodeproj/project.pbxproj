@@ -14,6 +14,7 @@
 		819EA0903FF9F7FFDEFD1D34742599AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		81AD7D2035EEDA53DE74F8558E8D3764 /* Pods-ABExpandableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36086E2A3BEE60135CCA23800AF6E23F /* Pods-ABExpandableView_Example-dummy.m */; };
 		9AFE487F18B6D0716802C8D8C0AC76C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CF1B8C6F1FEA685D008B7006 /* ExpandableSectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1B8C6E1FEA685D008B7006 /* ExpandableSectionsViewModel.swift */; };
 		CF3102BD1FE3DBB500658587 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3102B91FE3DBB500658587 /* SelectionCell.swift */; };
 		CF3102BE1FE3DBB500658587 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3102BB1FE3DBB500658587 /* ExpandableHeaderView.swift */; };
 		CF3102C41FE3DBE700658587 /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3102C01FE3DBE700658587 /* RowItem.swift */; };
@@ -61,6 +62,7 @@
 		A6221FBA09E43E1545423A5A7A561515 /* Pods-ABExpandableView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ABExpandableView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		B853C15AFDDC3807B27AD9E14D603E62 /* Pods-ABExpandableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ABExpandableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C8F9349582D1E73F6AE0FC97E8DBC39E /* ABExpandableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ABExpandableView-dummy.m"; sourceTree = "<group>"; };
+		CF1B8C6E1FEA685D008B7006 /* ExpandableSectionsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableSectionsViewModel.swift; sourceTree = "<group>"; };
 		CF3102B91FE3DBB500658587 /* SelectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionCell.swift; sourceTree = "<group>"; };
 		CF3102BB1FE3DBB500658587 /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
 		CF3102BC1FE3DBB500658587 /* ExpandableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExpandableHeaderView.xib; sourceTree = "<group>"; };
@@ -209,6 +211,14 @@
 			path = "Target Support Files/Pods-ABExpandableView_Example";
 			sourceTree = "<group>";
 		};
+		CF1B8C6D1FEA684A008B7006 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CF1B8C6E1FEA685D008B7006 /* ExpandableSectionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		CF3102B81FE3DBB500658587 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,13 +253,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		CF3102C61FE3DBEF00658587 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		CFC1CB251FE31C4800FF9F3E /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,8 +275,8 @@
 		DE024D5222A10136B241B6C3E94509B0 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CF1B8C6D1FEA684A008B7006 /* ViewModel */,
 				CFC1CB251FE31C4800FF9F3E /* View */,
-				CF3102C61FE3DBEF00658587 /* ViewModel */,
 				CF3102BF1FE3DBE700658587 /* Models */,
 				CF3102C21FE3DBE700658587 /* Resources */,
 			);
@@ -420,6 +423,7 @@
 				CFC1CB2B1FE31C6700FF9F3E /* ExpandableSectionsViewController.swift in Sources */,
 				CF3102BE1FE3DBB500658587 /* ExpandableHeaderView.swift in Sources */,
 				FE947B27766BF250350A221693DED20D /* ABExpandableView-dummy.m in Sources */,
+				CF1B8C6F1FEA685D008B7006 /* ExpandableSectionsViewModel.swift in Sources */,
 				CF3102BD1FE3DBB500658587 /* SelectionCell.swift in Sources */,
 				CF3102C41FE3DBE700658587 /* RowItem.swift in Sources */,
 			);

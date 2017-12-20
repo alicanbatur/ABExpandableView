@@ -11,14 +11,9 @@ Pod::Spec.new do |s|
   s.version          = '0.1.0'
   s.summary          = 'Expandable, collapsible, filterable and single/multi selectable table view.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+    This pod lets you to list data you want with sections which have ability to expand and collapse. You can also filter rows using searchbar text input. All rows are also selectible.
+    When you complete your data selection, you will have selected ids with the delegation. All these process will let you do your operations with default animations.
                        DESC
 
   s.homepage         = 'https://github.com/alicanbatur/ABExpandableView'
@@ -26,10 +21,12 @@ TODO: Add long description of the pod here.
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'alicanbatur' => 'alicanbatur@gmail.com' }
   s.source           = { :git => 'https://github.com/alicanbatur/ABExpandableView.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.social_media_url = 'https://twitter.com/alicanbatur'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
+  # s.source_files = 'ABExpandableView/Classes/**/*'
+  # s.source_files = 'ABExpandableView/Classes/**/*.{m,h,mm,hpp,cpp,c}'
   s.source_files = 'ABExpandableView/Classes/**/*'
   
   # s.resource_bundles = {
@@ -38,5 +35,4 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

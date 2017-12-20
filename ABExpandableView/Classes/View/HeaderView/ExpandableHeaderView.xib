@@ -77,6 +77,11 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowImageView" destination="6fP-2q-h2B" id="EfN-yv-z1G"/>
+                <outlet property="selectedItemCountLabel" destination="hRG-zo-2yf" id="6Ul-Xz-vq1"/>
+                <outlet property="titleLabel" destination="vNS-3o-Oy3" id="djc-wl-cTD"/>
+            </connections>
             <point key="canvasLocation" x="25.5" y="52"/>
         </view>
     </objects>
