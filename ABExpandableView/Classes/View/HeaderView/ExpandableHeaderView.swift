@@ -12,6 +12,13 @@ class ExpandableHeaderView: UITableViewHeaderFooterView {
     @IBOutlet var arrowImageView: UIImageView!
     @IBOutlet var selectedItemCountLabel: UILabel!
     @IBOutlet var titleLabel: UILabel!
+
+    // MARK: - Creation
+    
+    open class func newInstance() -> ExpandableHeaderView {
+        let bundle = Bundle(for: ExpandableHeaderView.self)
+        return bundle.loadNibNamed("ExpandableHeaderView", owner: self, options: nil)?.first as! ExpandableHeaderView
+    }
     
     // MARK: - Public vars
     

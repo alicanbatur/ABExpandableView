@@ -15,6 +15,8 @@
 		81AD7D2035EEDA53DE74F8558E8D3764 /* Pods-ABExpandableView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36086E2A3BEE60135CCA23800AF6E23F /* Pods-ABExpandableView_Example-dummy.m */; };
 		9AFE487F18B6D0716802C8D8C0AC76C8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		CF1B8C6F1FEA685D008B7006 /* ExpandableSectionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1B8C6E1FEA685D008B7006 /* ExpandableSectionsViewModel.swift */; };
+		CF1B8C721FEAA12E008B7006 /* Expandable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFC1CB291FE31C6700FF9F3E /* Expandable.storyboard */; };
+		CF1B8C751FEAA2A0008B7006 /* ExpandableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF3102BC1FE3DBB500658587 /* ExpandableHeaderView.xib */; };
 		CF3102BD1FE3DBB500658587 /* SelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3102B91FE3DBB500658587 /* SelectionCell.swift */; };
 		CF3102BE1FE3DBB500658587 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3102BB1FE3DBB500658587 /* ExpandableHeaderView.swift */; };
 		CF3102C41FE3DBE700658587 /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3102C01FE3DBE700658587 /* RowItem.swift */; };
@@ -346,6 +348,7 @@
 				35E4A3FA2FC511D848B598F22ABC30EE /* Sources */,
 				5414F81A10A918B1C70261A905B94929 /* Frameworks */,
 				4F37391246240EB313AB8BB741716E2E /* Headers */,
+				CF1B8C711FEAA126008B7006 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -405,6 +408,18 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF1B8C711FEAA126008B7006 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF1B8C721FEAA12E008B7006 /* Expandable.storyboard in Resources */,
+				CF1B8C751FEAA2A0008B7006 /* ExpandableHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29182589C28D46FA5499DD6C0E946475 /* Sources */ = {
@@ -565,7 +580,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -621,7 +636,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;

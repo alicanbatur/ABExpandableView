@@ -28,11 +28,6 @@ Pod::Spec.new do |s|
   # s.source_files = 'ABExpandableView/Classes/**/*'
   # s.source_files = 'ABExpandableView/Classes/**/*.{m,h,mm,hpp,cpp,c}'
   s.source_files = 'ABExpandableView/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ABExpandableView' => ['ABExpandableView/Assets/*.png']
-  # }
+  s.resource = 'Classes/View/Expandable.storyboard'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
 end

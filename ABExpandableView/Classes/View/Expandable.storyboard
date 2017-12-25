@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xHk-oO-F64">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xHk-oO-F64">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,6 +13,10 @@
         <scene sceneID="HC4-nK-Vly">
             <objects>
                 <viewController id="xHk-oO-F64" customClass="ExpandableSectionsViewController" customModule="ABExpandableView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w7r-KZ-ULE"/>
+                        <viewControllerLayoutGuide type="bottom" id="PIQ-qA-Lhd"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="IDF-h4-IoM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,7 +43,7 @@
                                     <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 </searchBar>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="SelectionCell" textLabel="Fyy-Kv-Ega" style="IBUITableViewCellStyleDefault" id="6f2-NU-LRH" customClass="SelectionCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="SelectionCell" textLabel="Fyy-Kv-Ega" style="IBUITableViewCellStyleDefault" id="6f2-NU-LRH" customClass="SelectionCell" customModule="ABExpandableView">
                                         <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6f2-NU-LRH" id="FAC-EF-nAE">
@@ -61,16 +65,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="leading" secondItem="LMV-hv-XHQ" secondAttribute="leading" id="2YY-6I-i3L"/>
-                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="bottom" secondItem="LMV-hv-XHQ" secondAttribute="bottom" id="3As-xv-ga7"/>
-                            <constraint firstItem="ISB-86-p0e" firstAttribute="leading" secondItem="LMV-hv-XHQ" secondAttribute="leading" constant="25" id="EpN-2G-VDN"/>
-                            <constraint firstItem="ISB-86-p0e" firstAttribute="top" secondItem="LMV-hv-XHQ" secondAttribute="top" constant="60" id="Rhx-21-bOz"/>
-                            <constraint firstItem="LMV-hv-XHQ" firstAttribute="trailing" secondItem="ISB-86-p0e" secondAttribute="trailing" constant="25" id="TSN-OO-gHF"/>
-                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="trailing" secondItem="LMV-hv-XHQ" secondAttribute="trailing" id="hLv-no-IRD"/>
+                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="leading" secondItem="IDF-h4-IoM" secondAttribute="leading" id="2YY-6I-i3L"/>
+                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="bottom" secondItem="PIQ-qA-Lhd" secondAttribute="top" id="3As-xv-ga7"/>
+                            <constraint firstItem="ISB-86-p0e" firstAttribute="leading" secondItem="IDF-h4-IoM" secondAttribute="leading" constant="25" id="EpN-2G-VDN"/>
+                            <constraint firstItem="ISB-86-p0e" firstAttribute="top" secondItem="w7r-KZ-ULE" secondAttribute="bottom" constant="60" id="Rhx-21-bOz"/>
+                            <constraint firstAttribute="trailing" secondItem="ISB-86-p0e" secondAttribute="trailing" constant="25" id="TSN-OO-gHF"/>
+                            <constraint firstItem="7Rj-f3-tVI" firstAttribute="trailing" secondItem="IDF-h4-IoM" secondAttribute="trailing" id="hLv-no-IRD"/>
                             <constraint firstItem="7Rj-f3-tVI" firstAttribute="top" secondItem="IDF-h4-IoM" secondAttribute="top" id="jjj-t0-EIj"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="LMV-hv-XHQ"/>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="PLj-lo-qOZ" id="TLG-4r-VkH"/>
+                        <outlet property="tableView" destination="7Rj-f3-tVI" id="PNp-AB-Jrz"/>
+                        <outlet property="warningLabel" destination="ISB-86-p0e" id="cBX-fE-jUq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ydk-i0-Kjz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

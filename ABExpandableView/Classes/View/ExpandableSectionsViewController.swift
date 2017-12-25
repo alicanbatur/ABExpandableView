@@ -88,7 +88,7 @@ extension ExpandableSectionsViewController: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let sectionHeaderView = Bundle.main.loadNibNamed("ExpandableHeaderView", owner: self, options: nil)?.first as! ExpandableHeaderView
+        let sectionHeaderView = ExpandableHeaderView.newInstance()
         //        sectionHeaderView.headerViewDelegate = self
         //        sectionHeaderView.sectionIndex = section;
         //        sectionHeaderView.updateHeaderTitle(viewModel.nameOfSection(at: section))
