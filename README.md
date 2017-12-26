@@ -5,6 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/ABExpandableView.svg?style=flat)](http://cocoapods.org/pods/ABExpandableView)
 [![Platform](https://img.shields.io/cocoapods/p/ABExpandableView.svg?style=flat)](http://cocoapods.org/pods/ABExpandableView)
 
+
+![alt text](https://gfycat.com/RipeUnhappyDamselfly "Example")
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
