@@ -116,9 +116,7 @@ extension ExpandableSectionsViewController: UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let sectionHeaderView = ExpandableHeaderView.newInstance()
-        sectionHeaderView.title = viewModel.name(at: section)
-        sectionHeaderView.rotateArrow(viewModel.isSectionExpanded(section))
+        let sectionHeaderView = ExpandableHeaderView.newInstance(section, delegate: self, title: viewModel.name(at: section), shouldRotateArrow: viewModel.isSectionExpanded(section))
         updateSelectedItemsCountValue(on: sectionHeaderView, tableView: tableView, section: section)
         return sectionHeaderView
     }
@@ -151,3 +149,13 @@ extension ExpandableSectionsViewController: UISearchBarDelegate {
     
 }
 
+// MARK: - HeaderViewDelegate
+
+extension ExpandableSectionsViewController: HeaderViewDelegate {
+    
+    func didTap(headerView: ExpandableHeaderView, section: Int) {
+        viewModel.toggle(section)
+        tableView.reloadSections(IndexSet(integer: section), with: .automatic)
+    }
+    
+}

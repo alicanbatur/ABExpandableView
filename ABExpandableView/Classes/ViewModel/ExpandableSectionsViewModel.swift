@@ -51,11 +51,6 @@ public class ExpandableSectionsViewModel: ExpandableSectionsViewModelProtocol {
         deselectItemOfRawItems(section: item, row: row)
     }
     
-    func isSectionExpanded(_ section: Int) -> Bool {
-        let item = items[section]
-        return item.expanded
-    }
-    
     func numberOfSelectedItems(at section: Int) -> Int {
         let item = items[section]
         guard let rawItem = rawItem(identifier: item.identifier) else { return 0 }
@@ -68,6 +63,18 @@ public class ExpandableSectionsViewModel: ExpandableSectionsViewModelProtocol {
             items.append(contentsOf: item.selectedRows)
         }
         return items
+    }
+    
+    // MARK: - Expand/Collapse Helpers
+
+    func isSectionExpanded(_ section: Int) -> Bool {
+        let item = items[section]
+        return item.expanded
+    }
+    
+    func toggle(_ section: Int) {
+        let item = items[section]
+        item.expanded = !item.expanded
     }
     
     // MARK: - Private Selection Helpers
@@ -96,7 +103,9 @@ public class ExpandableSectionsViewModel: ExpandableSectionsViewModelProtocol {
     }
     
     public func numberOfRows(at section: Int) -> Int {
-        return items[section].rows.count
+        let item = items[section]
+        if !item.expanded { return 0 }
+        return item.rows.count
     }
 
     public func name(at section: Int) -> String {

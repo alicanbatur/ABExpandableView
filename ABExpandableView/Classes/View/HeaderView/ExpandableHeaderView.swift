@@ -7,20 +7,34 @@
 
 import Foundation
 
+protocol HeaderViewDelegate: class {
+    func didTap(headerView: ExpandableHeaderView, section: Int)
+}
+
 class ExpandableHeaderView: UITableViewHeaderFooterView {
     
     @IBOutlet var arrowImageView: UIImageView!
     @IBOutlet var selectedItemCountLabel: UILabel!
     @IBOutlet var titleLabel: UILabel!
+    
+    private var section: Int?
 
+    weak var delegate: HeaderViewDelegate?
+    
     // MARK: - Creation
     
-    open class func newInstance() -> ExpandableHeaderView {
+    open class func newInstance(_ section: Int, delegate: HeaderViewDelegate, title: String, shouldRotateArrow: Bool) -> ExpandableHeaderView {
         let bundle = Bundle(for: ExpandableHeaderView.self)
-        return bundle.loadNibNamed("ExpandableHeaderView", owner: self, options: nil)?.first as! ExpandableHeaderView
+        let view = bundle.loadNibNamed("ExpandableHeaderView", owner: self, options: nil)?.first as! ExpandableHeaderView
+        view.addGesture()
+        view.section = section
+        view.delegate = delegate
+        view.title = title
+        view.rotateArrow(shouldRotateArrow)
+        return view
     }
     
-    // MARK: - Public vars
+    // MARK: - Public helpers
     
     var title: String = "" {
         didSet {
@@ -39,6 +53,20 @@ class ExpandableHeaderView: UITableViewHeaderFooterView {
         if up {
             arrowImageView.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         }
+    }
+    
+    // MARK: - Private Helpers
+    
+    private func addGesture() {
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ExpandableHeaderView.headerViewTapped(_:)))
+        addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    // MARK: - IBAction
+    
+    @IBAction func headerViewTapped(_ sender: Any) {
+        guard let section = section else { return }
+        delegate?.didTap(headerView: self, section: section)
     }
     
 }

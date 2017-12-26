@@ -26,20 +26,17 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNS-3o-Oy3">
-                            <rect key="frame" x="16" y="12" width="281" height="21"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="21" id="4ZS-ad-RqO"/>
-                            </constraints>
+                            <rect key="frame" x="16" y="12" width="289" height="21"/>
                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRG-zo-2yf">
-                            <rect key="frame" x="305" y="10" width="24" height="24"/>
+                            <rect key="frame" x="313" y="10" width="24" height="24"/>
                             <color key="backgroundColor" red="0.90980392160000001" green="0.1647058824" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="24" id="Gly-Vf-2yO"/>
-                                <constraint firstAttribute="width" constant="24" id="zoh-uy-0E6"/>
+                                <constraint firstAttribute="height" constant="24" id="CSc-hp-ISy"/>
+                                <constraint firstAttribute="width" constant="24" id="kld-oX-wb8"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -53,22 +50,23 @@
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="6fP-2q-h2B">
                             <rect key="frame" x="345" y="18" width="14" height="9"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="14" id="3c8-dd-35P"/>
-                                <constraint firstAttribute="height" constant="9" id="gvX-fE-1fj"/>
+                                <constraint firstAttribute="height" constant="9" id="Nz3-li-EGw"/>
+                                <constraint firstAttribute="width" constant="14" id="OWq-ui-iDh"/>
                             </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.87058823529999996" green="0.96862745100000003" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <gestureRecognizers/>
                     <constraints>
-                        <constraint firstItem="hRG-zo-2yf" firstAttribute="centerY" secondItem="f2q-mw-0Da" secondAttribute="centerY" id="7oh-Xg-CQi"/>
-                        <constraint firstItem="hRG-zo-2yf" firstAttribute="leading" secondItem="vNS-3o-Oy3" secondAttribute="trailing" constant="8" id="AYg-Ml-Eab"/>
+                        <constraint firstItem="6fP-2q-h2B" firstAttribute="leading" secondItem="hRG-zo-2yf" secondAttribute="trailing" constant="8" id="7uq-cT-WNo"/>
                         <constraint firstAttribute="bottom" secondItem="yW7-3c-FvD" secondAttribute="bottom" id="JXk-qB-nje"/>
-                        <constraint firstItem="6fP-2q-h2B" firstAttribute="centerY" secondItem="f2q-mw-0Da" secondAttribute="centerY" id="JsQ-sb-Lfd"/>
-                        <constraint firstItem="6fP-2q-h2B" firstAttribute="leading" secondItem="hRG-zo-2yf" secondAttribute="trailing" constant="16" id="Mth-AH-8Yj"/>
-                        <constraint firstAttribute="trailing" secondItem="6fP-2q-h2B" secondAttribute="trailing" constant="16" id="QoQ-yo-9ah"/>
-                        <constraint firstItem="vNS-3o-Oy3" firstAttribute="centerY" secondItem="f2q-mw-0Da" secondAttribute="centerY" id="cJo-Fd-ISt"/>
+                        <constraint firstItem="vNS-3o-Oy3" firstAttribute="leading" secondItem="f2q-mw-0Da" secondAttribute="leading" constant="16" id="UCU-II-nvq"/>
+                        <constraint firstAttribute="trailing" secondItem="6fP-2q-h2B" secondAttribute="trailing" constant="16" id="V3u-87-oEA"/>
                         <constraint firstItem="yW7-3c-FvD" firstAttribute="leading" secondItem="f2q-mw-0Da" secondAttribute="leading" id="daY-Rb-yMZ"/>
-                        <constraint firstItem="vNS-3o-Oy3" firstAttribute="leading" secondItem="f2q-mw-0Da" secondAttribute="leading" constant="16" id="r2z-a2-AK8"/>
+                        <constraint firstItem="hRG-zo-2yf" firstAttribute="leading" secondItem="vNS-3o-Oy3" secondAttribute="trailing" constant="8" id="e92-ON-Ebp"/>
+                        <constraint firstItem="6fP-2q-h2B" firstAttribute="centerY" secondItem="f2q-mw-0Da" secondAttribute="centerY" id="eEe-vW-QKf"/>
+                        <constraint firstItem="hRG-zo-2yf" firstAttribute="centerY" secondItem="f2q-mw-0Da" secondAttribute="centerY" id="v0t-eC-6op"/>
+                        <constraint firstItem="vNS-3o-Oy3" firstAttribute="centerY" secondItem="f2q-mw-0Da" secondAttribute="centerY" id="wg6-dv-ak9"/>
                         <constraint firstAttribute="trailing" secondItem="yW7-3c-FvD" secondAttribute="trailing" id="xZh-Ef-LoD"/>
                     </constraints>
                 </view>

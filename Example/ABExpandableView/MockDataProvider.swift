@@ -53,7 +53,7 @@ class MockDataProvider {
         
         let istanbul = City()
         istanbul.identifier = "34"
-        istanbul.name = "İstanbul"
+        istanbul.name = "İstanbul İstanbul İstanbul İstanbul İstanbul İstanbul İstanbul İstanbul"
         let kadikoy = Town(identifier: "4", name: "Kadıköy")
         let maltepe = Town(identifier: "5", name: "Maltepe")
         let beykoz = Town(identifier: "6", name: "Beykoz")
