@@ -25,9 +25,6 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  # s.source_files = 'ABExpandableView/Classes/**/*'
-  # s.source_files = 'ABExpandableView/Classes/**/*.{m,h,mm,hpp,cpp,c}'
   s.source_files = 'ABExpandableView/Classes/**/*'
-  s.resource = 'Classes/View/Expandable.storyboard'
 
 end
