@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/ABExpandableView.svg?style=flat)](http://cocoapods.org/pods/ABExpandableView)
 
 
-![alt text](https://gfycat.com/RipeUnhappyDamselfly "Example")
+<a href="https://gfycat.com/RipeUnhappyDamselfly"><img src="https://thumbs.gfycat.com/RipeUnhappyDamselfly-size_restricted.gif"/></a>
 
 
 ## Example
