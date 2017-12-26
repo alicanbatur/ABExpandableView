@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol RowItem {
+public protocol RowItem: class {
     var identifier: String! { get }
     var name: String! { get }
 }

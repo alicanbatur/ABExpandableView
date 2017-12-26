@@ -21,6 +21,7 @@
 		CF3102BE1FE3DBB500658587 /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3102BB1FE3DBB500658587 /* ExpandableHeaderView.swift */; };
 		CF3102C41FE3DBE700658587 /* RowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3102C01FE3DBE700658587 /* RowItem.swift */; };
 		CF3102C51FE3DBE700658587 /* SectionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3102C11FE3DBE700658587 /* SectionItem.swift */; };
+		CF892FDC1FF2728B00242A16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF3102C31FE3DBE700658587 /* Assets.xcassets */; };
 		CFC1CB2B1FE31C6700FF9F3E /* ExpandableSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC1CB2A1FE31C6700FF9F3E /* ExpandableSectionsViewController.swift */; };
 		D3615B444E5F4011FBB055722D41BE0B /* Pods-ABExpandableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A352218EF4CB21E6026FD3BA01DBDE7 /* Pods-ABExpandableView_Tests-dummy.m */; };
 		FE947B27766BF250350A221693DED20D /* ABExpandableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F9349582D1E73F6AE0FC97E8DBC39E /* ABExpandableView-dummy.m */; };
@@ -415,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF1B8C721FEAA12E008B7006 /* Expandable.storyboard in Resources */,
+				CF892FDC1FF2728B00242A16 /* Assets.xcassets in Resources */,
 				CF1B8C751FEAA2A0008B7006 /* ExpandableHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

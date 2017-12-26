@@ -35,7 +35,7 @@ class ExpandableHeaderView: UITableViewHeaderFooterView {
         }
     }
     
-    func rotateArrow(up: Bool) {
+    func rotateArrow(_ up: Bool) {
         if up {
             arrowImageView.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         }

@@ -10,12 +10,23 @@ import UIKit
 import ABExpandableView
 
 class ViewController: UIViewController {
-
+    
     // MARK: - IBAction
     
     @IBAction func buttonTapped(_ sender: Any) {
-        let asd = ExpandableSectionsViewController.newInstance()
-        self.navigationController?.pushViewController(asd, animated: true)
+        let expandableSectionsViewModel = ExpandableSectionsViewModel(MockDataProvider.createMockData())
+        let expandableSectionViewController = ExpandableSectionsViewController.newInstance(expandableSectionsViewModel)
+        expandableSectionViewController.title = "Choose Town(s)"
+        expandableSectionViewController.delegate = self
+        self.navigationController?.pushViewController(expandableSectionViewController, animated: true)
     }
+}
+
+extension ViewController: ExpandableSectionsViewControllerDelegate {
+    
+    func didSelectItems<Town>(_ items: [Town]) {
+        debugPrint("towns are here")
+    }
+    
 }
 

@@ -7,12 +7,11 @@
 
 import Foundation
 
-protocol SectionItem: RowItem {
+public protocol SectionItem: RowItem {
     var expanded: Bool { get set }
     var rows: [RowItem] { get set }
     var rawRows: [RowItem] { get set }
     var selectedRows: [RowItem] { get set }
-    var numberOfSelectedItems: Int { get }
 }
 
 /*
@@ -21,13 +20,17 @@ protocol SectionItem: RowItem {
 
 extension SectionItem {
     
-    mutating func select(row: RowItem) {
+    func numberOfSelectedItems() -> Int {
+        return selectedRows.count
+    }
+    
+    func select(row: RowItem) {
         if !selectedRows.contains(where: { $0.identifier == row.identifier }) {
             selectedRows.append(row)
         }
     }
     
-    mutating func deselect(row: RowItem) {
+    func deselect(row: RowItem) {
         selectedRows = selectedRows.filter({ $0.identifier != row.identifier })
     }
     
@@ -35,7 +38,7 @@ extension SectionItem {
         return selectedRows.contains(where: { $0.identifier == row.identifier })
     }
     
-    mutating func filterRows(inputText: String) -> [RowItem] {
+    func filterRows(inputText: String) -> [RowItem] {
         rows = rawRows.filter({( item: RowItem) -> Bool in
             if inputText == "" { return true }
             return item.name.lowercased().range(of: inputText.lowercased()) != nil

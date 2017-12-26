@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6C4B2682989F0BD68E2A5CF2 /* Pods_ABExpandableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC136B5B75AE091834C276A /* Pods_ABExpandableView_Tests.framework */; };
+		CF5DEBA41FF12A5B0081F6C3 /* MockDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5DEBA31FF12A5B0081F6C3 /* MockDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +33,9 @@
 		1302B58140FD07E8AD155C7E /* Pods-ABExpandableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABExpandableView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ABExpandableView_Tests/Pods-ABExpandableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		15CDE6AADB5CBDDC6B2BC415 /* Pods_ABExpandableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ABExpandableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F6FB63978A6C5D5B8C0FA4F /* Pods-ABExpandableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABExpandableView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABExpandableView_Example/Pods-ABExpandableView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		30136236EB457A45D6F7240C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		30136236EB457A45D6F7240C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3213E5C45F13A26E9FDF2A8E /* Pods-ABExpandableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABExpandableView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ABExpandableView_Tests/Pods-ABExpandableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		39986B089C1A75E5B177520C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		39986B089C1A75E5B177520C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ABExpandableView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ABExpandableView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +46,8 @@
 		607FACE51AFB9204008FA782 /* ABExpandableView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ABExpandableView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		870F4695886C96490AE30B99 /* ABExpandableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ABExpandableView.podspec; path = ../ABExpandableView.podspec; sourceTree = "<group>"; };
+		870F4695886C96490AE30B99 /* ABExpandableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ABExpandableView.podspec; path = ../ABExpandableView.podspec; sourceTree = "<group>"; };
+		CF5DEBA31FF12A5B0081F6C3 /* MockDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataProvider.swift; sourceTree = "<group>"; };
 		F205A38123A0BCE2CFFCBBBC /* Pods-ABExpandableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ABExpandableView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ABExpandableView_Example/Pods-ABExpandableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				CF5DEBA31FF12A5B0081F6C3 /* MockDataProvider.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -362,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				CF5DEBA41FF12A5B0081F6C3 /* MockDataProvider.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

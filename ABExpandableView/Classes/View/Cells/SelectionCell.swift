@@ -15,6 +15,11 @@ class SelectionCell: UITableViewCell {
         return String(describing: self)
     }
     
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        accessoryType = selected ? .checkmark : .none
+    }
+    
     // MARK: - Public helper
     
     func populateCell(_ text: String) {
