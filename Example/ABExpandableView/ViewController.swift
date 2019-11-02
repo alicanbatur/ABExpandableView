@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 extension ViewController: ExpandableSectionsViewControllerDelegate {
     
     func didSelectItems(_ items: [RowItem]) {
-        let names = items.flatMap { $0.name }.joined(separator: ", ")
+        let names = items.compactMap { $0.name }.joined(separator: ", ")
         textView.text = names
     }
     
