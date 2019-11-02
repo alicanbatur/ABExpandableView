@@ -1,6 +1,9 @@
 {
+  "os": "osx",
+  "dist": "xenial",
+  "group": "stable",
+  ".result": "configured",
   "language": "swift",
   "osx_image": "xcode9",
-  "xcode_project": "Example/ABExpandableView.xcworkspace",
-  "os": "osx"
+  "xcode_project": "Example/ABExpandableView.xcworkspace"
 }
