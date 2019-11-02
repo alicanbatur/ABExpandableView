@@ -80,7 +80,7 @@ public class ExpandableSectionsViewModel: ExpandableSectionsViewModelProtocol {
     // MARK: - Private Selection Helpers
     
     private func rawItem(identifier: String) -> SectionItem? {
-        if let i = rawItems.index(where: { $0.identifier == identifier }) {
+        if let i = rawItems.firstIndex(where: { $0.identifier == identifier }) {
             return rawItems[i]
         }
         return nil
