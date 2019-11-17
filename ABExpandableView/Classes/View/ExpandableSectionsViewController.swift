@@ -133,7 +133,11 @@ extension ExpandableSectionsViewController: UISearchBarDelegate {
             return false
         }
         searchBar.setShowsCancelButton(true, animated: true)
-        viewModel.filterArray(with: (searchBar.text! as NSString), range: range, text: text)
+        
+        if let castedText = searchBar.text as NSString? {
+            viewModel.filterArray(with: castedText, range: range, text: text)   
+        }
+
         warningLabel.isHidden = !viewModel.hasItems
         tableView.reloadData()
         return true
