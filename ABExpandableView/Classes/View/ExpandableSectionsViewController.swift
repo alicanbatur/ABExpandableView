@@ -8,7 +8,7 @@
 import UIKit
 
 public protocol ExpandableSectionsViewControllerDelegate: class {
-    func didSelectItems<T>(_ items: [T])
+    func didSelectItems(_ items: [RowItem])
 }
 
 open class ExpandableSectionsViewController: UIViewController {

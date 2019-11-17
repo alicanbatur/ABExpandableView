@@ -11,6 +11,8 @@ import ABExpandableView
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var textView: UITextView!
+    
     // MARK: - IBAction
     
     @IBAction func buttonTapped(_ sender: Any) {
@@ -24,8 +26,9 @@ class ViewController: UIViewController {
 
 extension ViewController: ExpandableSectionsViewControllerDelegate {
     
-    func didSelectItems<Town>(_ items: [Town]) {
-        debugPrint("towns are here")
+    func didSelectItems(_ items: [RowItem]) {
+        let names = items.compactMap { $0.name }.joined(separator: ", ")
+        textView.text = names
     }
     
 }
